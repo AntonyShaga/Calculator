@@ -1,0 +1,143 @@
+body,
+html,
+p {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+div {
+  box-sizing: border-box;
+}
+.page {
+  max-width: 414px;
+
+  margin: 0 auto;
+  padding: 10px;
+}
+.calc {
+  display: flex;
+	flex-direction: column;
+  
+	min-height: 100%;
+
+  padding: 10px;
+
+  background-color: #000;
+  border-radius: 20px;
+}
+.calc__screen {
+  min-height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+  background-color: gray;
+}
+.calc_top {
+  min-height: 2em;
+
+  display: flex;
+  align-items: center;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  padding: 0 15px;
+}
+.calc__screen-head-result {
+  display: flex;
+  justify-content: ;
+  flex: 1 0 auto;
+
+  border: none;
+  background-color: inherit;
+  cursor: default;
+
+  padding: 30px 20px;
+}
+.calc__screen-head-result:focus {
+  outline: none;
+}
+.calc__answer-screan {
+  min-height: 4em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 20px;
+}
+.calc__auxiliary-screen {
+  min-height: 3em;
+}
+.button {
+  width: 3em;
+  height: 3em;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: none;
+
+  border-radius: 50%;
+  background-color: beige;
+}
+.calc__buttons {
+  padding: 20px 10px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+
+  background-color: gray;
+}
+.calc__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 0 auto;
+  min-height: 2em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: gainsboro;
+}
+.calc__bottom-burger {
+  display: flex;
+  gap: 3px;
+}
+.calc__bottom-burger-line {
+  height: 1em;
+
+  border-radius: 10px;
+  border: 1.5px solid gray;
+}
+
+.calc__bottom-circle {
+  width: 1em;
+  height: 1em;
+  border: 2px solid gray;
+  border-radius: 6px;
+}
+.calc__bottom-less-than {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.calc__bottom-less-than-line {
+  width: 0.8em;
+  border-radius: 10px;
+  background-color: gray;
+  border: 1.5px solid gray;
+}
+.top {
+  transform: rotate(-40deg);
+}
+.bottom {
+  transform: rotate(40deg);
+}
